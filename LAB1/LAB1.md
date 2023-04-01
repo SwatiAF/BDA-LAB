@@ -1,4 +1,4 @@
-# MongoDB commands in Linux
+# create, insert, update, find, count, 
 
 ```
 $mongosh
