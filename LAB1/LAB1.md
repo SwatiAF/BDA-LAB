@@ -1,4 +1,4 @@
-# create, insert, update, find, count, 
+# create, insert, update, find, count
 
 ```
 $mongosh
