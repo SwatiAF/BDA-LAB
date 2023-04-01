@@ -117,4 +117,36 @@ database1> db.student.find({Sem:6}).limit(4);
 
 database1> db.student.find({StudName:"student2",Sem:6});
 [ { _id: 2, StudName: 'student2', Sem: 6 } ]
+
+database1> db.student.find().sort({StudName:1}).pretty();
+[
+  { _id: 1, StudName: 'student1', Sem: 6 },
+  { _id: 2, StudName: 'student2', Sem: 6 },
+  { _id: 3, StudName: 'student3', Sem: 6 },
+  { _id: 4, StudName: 'student4', Sem: 7 },
+  { _id: 5, StudName: 'student5' },
+  { _id: 6, StudName: 'student6', Sem: 6, OE: 'OR' }
+]
+database1> db.student.find().sort({StudName:-1}).pretty();
+[
+  { _id: 6, StudName: 'student6', Sem: 6, OE: 'OR' },
+  { _id: 5, StudName: 'student5' },
+  { _id: 4, StudName: 'student4', Sem: 7 },
+  { _id: 3, StudName: 'student3', Sem: 6 },
+  { _id: 2, StudName: 'student2', Sem: 6 },
+  { _id: 1, StudName: 'student1', Sem: 6 }
+]
+
+database1> db.student.find().skip(3).pretty()
+[
+  { _id: 4, StudName: 'student4', Sem: 7 },
+  { _id: 5, StudName: 'student5' },
+  { _id: 6, StudName: 'student6', Sem: 6, OE: 'OR' }
+]
+
+database1> db.student.count({Sem:7});
+1
+
+
+
 ```
