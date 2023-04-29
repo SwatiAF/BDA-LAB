@@ -78,6 +78,25 @@ emplid | dateofjoining                   | deptname | designation  | emplname  |
     103 | 2020-04-20 18:30:00.000000+0000 |    dept1 | designation3 | employee3 |  75000
 ```
 
+```
+alter table EmployeeInfo add Projects text;
+```
+
+```
+select * from EmployeeInfo;
+```
+
+```
+emplid | dateofjoining                   | deptname | designation  | emplname  | projects | salary
+--------+---------------------------------+----------+--------------+-----------+----------+--------
+    105 | 2020-09-10 18:30:00.000000+0000 |    dept2 | designation5 | employee5 |     null |  15000
+    121 | 2020-10-17 18:30:00.000000+0000 |    dept2 | designation6 | employee7 |     null |  45000
+    104 | 2020-12-01 18:30:00.000000+0000 |    dept2 | designation4 | employee4 |     null |  90000
+    102 | 2020-06-03 18:30:00.000000+0000 |    dept1 | designation2 | employee2 |     null |  60000
+    101 | 2020-03-28 18:30:00.000000+0000 |    dept1 | designation1 | employee1 |     null |  40000
+    103 | 2020-04-20 18:30:00.000000+0000 |    dept1 | designation3 | employee3 |     null |  75000
+```
+
 
 
 
