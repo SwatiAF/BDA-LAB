@@ -1,3 +1,4 @@
+studID,studName,bookID,bookName,dateOfIssue,counterValue
 1,Raj,101,The Midnight Library,2023-05-07 18:30:00.000+0000,1
 5,Karan,105,Portrait of an Unknown Woman,2023-01-27 18:30:00.000+0000,2
 2,Krishna,102,The Little Coffee Shop of Kabul,2023-03-06 18:30:00.000+0000,1
