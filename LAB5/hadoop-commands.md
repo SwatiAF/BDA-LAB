@@ -1,4 +1,4 @@
-**commands to start all hadoop daemons**
+**command to start all hadoop daemons**
 
 ```
 start-all.sh
@@ -48,7 +48,8 @@ drwxr-xr-x   - hadoop supergroup          0 2023-04-27 11:44 /siri
 ```
 echo "<Text to append>" | hdfs dfs -appendToFile - /user/hduser/myfile.txt OR
 
-hdfs dfs -appendToFile - /user/hduser/myfile.txt and then type the text on the terminal. Once you are done typing then hit 'Ctrl+D'
+hdfs dfs -appendToFile - /user/hduser/myfile.txt 
+and then type the text on the terminal. Once you are done typing then hit 'Ctrl+D'
 ```
 
 **cat command**
@@ -101,7 +102,7 @@ new hdfs file in hdfs folder
 hdfs dfs -copyToLocal /bda/ghost.txt Desktop/bigdata.txt
 ```
 
-**Contents of bigdata.txt file in desktop is: **
+**Contents of bigdata.txt file in desktop is:**
 
 new hdfs file in hdfs folder
 
